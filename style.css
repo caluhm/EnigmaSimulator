@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.container .conversion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.container .settings {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .conversion .centre {
+    padding-top: 75px;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .conversion .centre p {
+    margin: 0;
+    opacity: 70%;
+}
+
+.container .conversion .centre img {
+    width: 35px;
+    opacity: 70%;
+}
+
+.container .conversion .centre .encrypt-button {
+    padding: 10px 25px 10px 25px;
+    border-radius: 20px;
+    border-color: #0091FF;
+    text-decoration: none;
+    background: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.container .conversion .centre .encrypt-button:hover {
+    border-color: #1769a7;
+    background: rgb(231, 231, 231);
+    color: rgb(0, 0, 0);
+}
+
+.container .conversion textarea {
+    width: 250px;
+    height: 200px;
+    border-radius: 8px;
+    border-color: #0091FF;
+}
+
+.container .settings .rotors .rotor-subsection .rotor-select,
+.container .settings .reflector .reflector-subsection .reflector-select {
+    border-color: #0091FF;
+}
+
+.container .settings .plugboard textarea {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: #0091FF;
+}
+
+.container .settings .plugboard p {
+    color: rgb(194, 194, 194);
+    font-size: 12px;
+}
+ 
