@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Engima Machine Simulator by Calum Jarvis</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <script src="./Script/Main.js"></script>
+   <script src="./Script/Engima.js"></script>
+   <script src="./Script/Rotor.js"></script>
+   <script src="./Script/Reflector.js"></script>
+   <script src="./Script/Plugboard.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="conversion">
+      <div class="input-section">
+         <h2>Plaintext</h2>
+         <textarea id="plain-text-area"></textarea>
+     </div>
+     <div class="centre">
+         <button class="encrypt-button" onclick="Main()">Encrypt</button>
+      </div>
+      <div class="output-section">
+         <h2>Cyphertext</h2>
+         <textarea id="cypher-text-area" readonly></textarea>
+     </div>
+    </div>
+    <div class="settings">
+        <h2>Settings</h2>
+        <div class="rotors">
+            <h3>Rotor Settings</h3>
+            <div class="rotor-subsection">
+                <label>Rotors</label>
+                <select class="rotor-select" id="left-choice">
+                    <option value="I" selected>I</option>
+                    <option value="II">II</option>
+                    <option value="III">III</option>
+                    <option value="IV">IV</option>
+                    <option value="V">V</option>
+                </select>
+                <select class="rotor-select" id="middle-choice">
+                    <option value="I">I</option>
+                    <option value="II" selected>II</option>
+                    <option value="III">III</option>
+                    <option value="IV">IV</option>
+                    <option value="V">V</option>
+                </select>
+                <select class="rotor-select" id="right-choice">
+                    <option value="I">I</option>
+                    <option value="II">II</option>
+                    <option value="III" selected>III</option>
+                    <option value="IV">IV</option>
+                    <option value="V">V</option>
+                </select>
+            </div>
+        </div>
+        <div class="reflector">
+            <h3>Reflector Settings</h3>
+            <div class="reflector-subsection">
+                <label>Reflector</label>
+                <select class="reflector-select" id="reflector-choice">
+                    <option value="B" selected>B</option>
+                    <option value="C">C</option>
+                </select>
+            </div>  
+        </div>
+        <div class="plugboard">
+            <h3>Plugboard Settings</h3>
+            <textarea id="plugboard-text-area"></textarea>
+            <p>**Format Example: AC BU MX**</p>
+         </div>
+    </div>
+</div>
+</body>
+</html>
